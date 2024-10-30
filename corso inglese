@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corso di Public Speaking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #4A90E2;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?public-speaking');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .hero h2 {
+            font-size: 2.8rem;
+            z-index: 1;
+            position: relative;
+        }
+        .hero p {
+            font-size: 1.4rem;
+            z-index: 1;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+        .cta {
+            background-color: #FF3B3F;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1;
+            position: relative;
+        }
+        .section {
+            padding: 3rem 0;
+        }
+        .icons img {
+            width: 50px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .testimonials, .pricing, .instructors {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .testimonials h3, .pricing h3, .instructors h3 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        .testimonial, .instructor {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .testimonial p, .instructor p {
+            font-style: italic;
+            color: #666;
+        }
+        .form-section {
+            background: #fff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .form-section h3 {
+            color: #333;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        form input[type="text"], form input[type="email"] {
+            width: 90%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        form input[type="submit"] {
+            background: #FF3B3F;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Corso di Public Speaking</h1>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h2>Diventa un Oratore Sicuro e Persuasivo</h2>
+        <p>Unisciti al nostro corso online per soli €14,90 al mese dopo un mese di prova gratuita!</p>
+        <button class="cta">Inizia la Prova Gratuita</button>
+    </div>
+</section>
+
+<section class="section icons">
+    <div class="container">
+        <h3>Il Corso Include:</h3>
+        <img src="https://img.icons8.com/ios-filled/50/4a90e2/video-conference.png" alt="Lezioni online">
+        <span>Lezioni online interattive</span><br>
+        <img src="https://img.icons8.com/ios-filled/50/4a90e2/pdf.png" alt="Guide scaricabili">
+        <span>Guide scaricabili</span><br>
+        <img src="https://img.icons8.com/ios-filled/50/4a90e2/chat.png" alt="Assistenza in chat">
+        <span>Assistenza in chat con docenti madrelingua</span>
+    </div>
+</section>
+
+<section class="section instructors">
+    <div class="container">
+        <h3>I Nostri Docenti</h3>
+        <div class="instructor">
+            <img src="https://source.unsplash.com/80x80/?teacher" alt="Docente">
+            <p>"Insegniamo a comunicare in modo efficace in ogni situazione."</p>
+            <small>- Maria Rossi, Docente</small>
+        </div>
+        <div class="instructor">
+            <img src="https://source.unsplash.com/80x80/?professional" alt="Docente">
+            <p>"Impara dai migliori: tutti i nostri docenti sono madrelingua."</p>
+            <small>- Luca Bianchi, Docente</small>
+        </div>
+    </div>
+</section>
+
+<section class="section testimonials">
+    <div class="container">
+        <h3>Testimonianze</h3>
+        <div class="testimonial">
+            <img src="https://source.unsplash.com/50x50/?user" alt="User">
+            <p>"Questo corso mi ha aiutato a migliorare la mia fiducia quando parlo in pubblico!"</p>
+            <small>- Andrea F.</small>
+        </div>
+        <div class="testimonial">
+            <img src="https://source.unsplash.com/50x50/?user2" alt="User">
+            <p>"Le guide scaricabili sono fantastiche per esercitarmi a casa!"</p>
+            <small>- Silvia M.</small>
+        </div>
+    </div>
+</section>
+
+<section class="section form-section">
+    <div class="container">
+        <h3>Contattaci</h3>
+        <form action="mailto:niko.publicspeaking@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Nome" value="Nicholas">
+            <input type="text" name="cognome" placeholder="Cognome" value="Russi">
+            <input type="email" name="email" placeholder="Email" value="Niko.publicspeaking@gmail.com">
+            <input type="submit" value="Invia Messaggio">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Corso di Public Speaking. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
